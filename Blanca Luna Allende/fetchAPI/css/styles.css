@@ -1,0 +1,140 @@
+
+
+
+     html {
+
+      box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+      box-sizing: inherit;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      background-color: #222;
+      color: #fff;
+      font-weight: bold;
+  }
+  
+  h1,
+  h2 {
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+  
+  p {
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+  }
+  
+  /* Estilos para contenedor */
+  .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+  
+  /* Botones */
+  .boton {
+      background-color: #55AD9B;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 5rem;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+  }
+  
+  /* Estilos para la letra de la canción */
+  .letra-resultado {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      padding: 1rem;
+      background-color: #95D2B3;
+      border-radius: 3rem;
+      color: white;
+      font-family: 'Times New Roman', serif;
+      text-align: left;
+      width: 70%;
+      line-height: 1.5;
+  }
+  .contenido {
+    background-image: url(../img/fondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+     display: block;
+     text-align: center;
+     width: 100%;
+     height: 50rem;}
+
+     .principal {
+      text-align: left;
+      margin-left: 5%;
+      margin-top: 5%;
+   }
+   .principal i {
+        font-size: 200%;
+        color: aqua;
+   
+   }
+  
+  /* Imágenes Responsivas */
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  /* Media Query para dispositivos pequeños */
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 1.5rem;
+      }
+  
+      .contenedor {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .letra-resultado {
+          width: 90%; /* Ajustar el ancho en pantallas pequeñas */
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+  
+      .boton {
+          font-size: 1.2rem;
+          padding: 0.8rem 1.5rem;
+      }
+  }
+  
+  /* Media Query para móviles muy pequeños */
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 1.2rem;
+      }
+  
+      .letra-resultado {
+          width: 95%;
+          margin-left: 2%;
+          margin-right: 2%;
+      }
+  
+      .boton {
+          font-size: 1rem;
+          padding: 0.7rem 1.2rem;
+      }
+  }
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ce556c387.js" crossorigin="anonymous"></script>
+
+    <title>canciones</title>
+</head>
+
+<body>
+    <main id="contenido" class="contenido">
+       
+        
+        <div class="principal"> <a href="../index .html#PROYECTOS"><i class="fa-duotone fa-solid fa-house" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i></a></div>
+        <h1>Letras de Canciones</h1>
+        <div class="contenedor">
+            <div id="buscar" class="buscar">
+                <h2>Búsqueda</h2>
+                <p>Busca por artista y nombre:</p>
+                <p><span> * </span>Obligatorio</p>
+                <form action="#" id="formulario-buscar">
+                    <div class="input">
+                        <label for="artista">Artista: <span>*</span></label>
+                        <input class="info" type="text" id="artista" placeholder="Artista">
+                    </div>
+                    <div class="input">
+                        <label for="cancion">Canción: <span>*</span></label>
+                        <input class="info" type="text" id="cancion" placeholder="Nombre Canción">
+                    </div>
+
+                    <div class="input enviar ">
+                        <input class="boton" type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div id="mensajes"></div>
+            </div>
+
+            <div class="letra-resultado">
+                <h2></h2>
+                <div id="resultado"></div>
+           
+    </main>
+    <script src="js/app.js" type="module"></script>
+</body>
+
+</html>

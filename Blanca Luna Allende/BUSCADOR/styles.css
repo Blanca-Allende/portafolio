@@ -1,0 +1,221 @@
+/* Estilos generales del body */
+body {
+    background: linear-gradient(90deg, rgba(33, 153, 116, 0.96) 0%, rgba(63, 173, 130, 1) 28%, rgba(17, 108, 173, 0.86) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; 
+}
+
+/* Contenedor principal para el buscador y resultados */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%; /* Ajustar al 100% del contenedor */
+    max-width: 100%; 
+    max-height: 80%;
+    margin: 1rem auto; 
+}
+
+/* Estilos del formulario */
+.formulario {
+    text-align: center;
+    background-color: #102C57;
+    width: 100%; 
+    max-width: 500px; 
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 15px;
+    margin: 2rem 1rem; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del área de resultados */
+.resultado {
+    font-size: 1.5rem;
+    background-color: #55AD9B;
+    color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Añadir un max-width para que no se expanda demasiado */
+    min-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el área de resultados internos */
+#resultado {
+    font-size: 1.3rem;
+    color: #333;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+/* Estilo para el botón */
+.button_slide {
+    text-decoration: none;
+    margin-top: 1rem;
+    background-color: #55AD9B;
+    border: 3px solid #D80286;
+    border-radius: 25px;
+    padding: 12px 24px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    color: white;
+    text-align: center;
+}
+
+.principal {
+    text-align: left;
+    width: 100%;
+ }
+ .principal i {
+      font-size: 250%;
+      color: aqua;
+      margin-top: 1rem;
+ 
+ }
+/* Efectos al hacer hover sobre el botón */
+.button_slide:hover {
+    background-color: #D80286;
+    box-shadow: inset 0 0 0 100px #D80286;
+}
+
+.button_slide:active {
+    transform: scale(0.98);
+}
+
+/* Estilo general del formulario */
+#buscador {
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem; 
+}
+
+/* Estilos para el título */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: #fff;
+}
+
+/* Estilos para los labels */
+label {
+    width: 100%; 
+    display: block; 
+    margin-top: 1rem; 
+    font-size: 1.2rem; 
+}
+
+/* Estilos para los selects */
+select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    margin-top: 0.5rem; 
+    box-sizing: border-box; 
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario,
+    .resultado {
+        width: 90%; /* Ancho más pequeño para pantallas medianas */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    select {
+        padding: 1rem;
+    }
+
+    .button_slide {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Para pantallas más pequeñas, como teléfonos */
+@media (max-width: 480px) {
+    .formulario,
+    .resultado {
+        width: 95%; /* Asegurarse de que todo el contenido ocupe casi todo el ancho */
+    }
+
+    .button_slide {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #buscador {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    select, label {
+        width: 100%;
+    }
+}
+
+/* Para pantallas extremadamente pequeñas, como pantallas de 360px */
+@media (max-width: 360px) {
+    .formulario,
+    .resultado {
+        width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    }
+
+    .button_slide {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    #buscador {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    select, label {
+        width: 100%;
+    }
+
+    .encabezado{
+        flex-direction: column; 
+        width: 200%;
+        align-items: center;
+        background-color: red;
+    }
+}
+

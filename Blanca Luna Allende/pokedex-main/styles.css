@@ -1,0 +1,563 @@
+:root {
+    ---morado: #210441;
+    ---azul: #09284e;
+    ---verde1: #0a5a4e;
+    ---verde2: #609d14;
+    ---verde3: #7eac53;
+    ---blanco: #fff;
+    ---negro: #000;
+
+}
+
+
+
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+    color: var(---negro);
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+body {
+
+    background: rgb(33, 153, 116);
+    background: linear-gradient(90deg, rgba(33, 153, 116, 0.9632645294445903) 0%, rgba(63, 173, 130, 1) 28%, rgba(17, 108, 173, 0.8596230728619573) 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    background-color: var(---blanco);
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+
+input {
+    font-size: 2rem;
+    align-items: center;
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem;
+    margin-right: 0.1rem;
+    border-radius: 1rem;
+    height: 3.5rem;
+    display: inline;
+    border: 0.3rem #609d14 solid;
+    box-shadow: #41B06E;
+
+
+}
+
+
+button i {
+    padding: 0.8rem;
+    margin-left: 0.12rem;
+    font-size: 2.3rem;
+    background-color: grey;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+button i:hover {
+    padding: 0.8rem;
+    font-size: 2.3rem;
+    background-color: grey;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+.btn {
+    border-radius: #4D869C;
+    background-color: #57A6A1;
+    color: #EEF7FF;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+
+
+}
+
+.slide_down:hover {
+
+    box-shadow: inset 0 100px 0 0 #41B06E;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+.cabecera {
+    background-color: var(---verde1);
+    color: #fff;
+    padding: 1rem 1rem 1rem 0rem;
+    height: 8rem;
+    width: 100%;
+    box-shadow: 0 0 3rem -5rem rgba(0, 0, 0, .5);
+}
+
+.btn_header {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 1rem;
+    height: 20%;
+    margin-bottom: 1rem;
+}
+
+.btn_header img {
+    font-size: 100vh;
+
+
+    height: 110px;
+
+}
+
+
+
+.lista {
+
+    padding: 0.5rem;
+    
+    width: 100%;
+
+    display: flex;
+    list-style: none;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 2rem;
+    align-content: space-between;
+
+}
+
+.botones {
+
+    background-color: var(---verde2);
+    font-size: 1.2rem;
+    color: var(---blanco);
+    padding: 1rem;
+    margin: 1rem 1rem;
+
+    width: 15rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    box-shadow: #210441;
+    border: #0a5a4e;
+}
+
+.botones:hover {
+    background-color: var(---verde3);
+    transform: scale(1.1);
+}
+
+
+
+.botones_tipo>li {
+    background-color: #609d14;
+    margin-top: 25rem;
+}
+
+
+
+.busqueda {
+    width: 100%;
+
+    display: inline-block;
+    align-content: center;
+    padding: 1rem 5rem 1rem 5rem;
+
+}
+
+
+.pokemon-varios {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    width: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+.pokemon {
+    width: 25%;
+    background-color: --;
+
+    margin: 0.5rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 4rem -1rem rgba(24, 136, 57, 0.86);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+
+.img-pokemon {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.img-pokemon img {
+    width: 100%;
+    max-width: 10rem;
+}
+
+.info-pokemon {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+.id_inf {
+    background-color: var(---verde2);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    color: #fff;
+
+}
+
+.nombre {
+    color: var(---verde1);
+    font-size: 1.5rem;
+
+
+}
+
+.habilidad_titulo {
+    color: var(---azul);
+    font-size: 1.5rem;
+
+}
+
+.habilidad {
+    color: #41B06E;
+}
+
+.buscarpokemon {
+
+    width: 45%;
+    display: flex;
+
+    margin: 0.5rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 4rem -1rem rgba(24, 136, 57, 0.86);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    margin: 1rem 8rem 8rem 25rem;
+}
+
+
+
+
+.peso1,
+.tipo1,
+.altura1 {
+    display: flex;
+
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10rem grey solid;
+    background-color: #0a5a4e;
+    padding-left: 5rem;
+
+
+}
+
+
+.sonido i {
+    background-color: #609d14;
+    color: #fff;
+}
+
+.buscarpokemon {
+    background-color: #41B06E;
+    display: inline-block;
+}
+
+
+.img-pokemon-b {
+    display: flex;
+    width: 90%;
+    margin: 0.5rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 4rem -1rem rgba(24, 136, 57, 0.86);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.img-pokemon-b img {
+
+    width: 50%;
+    margin: 0.1rem 1rem 0.2rem 0.8rem;
+
+
+}
+
+.info-pokemon-b {
+
+    margin-left: 0.2rem;
+    width: 50%;
+    padding-top:3rem ;
+}
+
+
+.buscarpokemon {
+    background-color: #41B06E;
+    display: inline-block;
+    margin-left: 10rem;
+    width: 100%;
+
+
+
+}
+
+.pokemon-b {
+    width: 50%;
+}
+
+.principal {
+    text-align: right;
+    width: 2%;
+    margin-top: -2rem;
+ }
+ .principal i {
+      font-size: 250%;
+      color: aqua;
+      margin-top: 1rem;
+ 
+ }
+
+
+
+#tipos_buscar {
+
+    background-color: var(---verde1);
+    display: flex;
+    width: 100%;
+}
+
+#busquedapokemon {
+    color: var(---blanco);
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+   
+
+}
+
+
+
+@media (max-width:768px ) {
+    body {
+        width: 100%;
+    }
+
+
+    main {
+        width: 90%;
+        padding-top: 0.5rem;
+       
+    }
+
+    input {
+        width: 115%;
+        font-size: 2rem;
+        align-items: center;
+        margin-left: -1rem;
+       
+    }
+
+    button i {
+        align-items: center;
+        margin-left: 8rem;
+        font-size: 3rem;
+    }
+
+
+    .pokemon {
+        width: 100%;
+        margin-left: 0.8rem;
+    }
+
+    .logo_imagen {
+        font-size: 33%;
+        margin: -2rem 0.1rem  1rem 0.1rem;
+        height: 285%;
+    }
+
+
+    .botones {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+
+    .btn {
+        width: 90%;
+        margin: 0.2rem 1rem 0.2rem 1rem;
+        padding: 0.6rem;
+        font-size: 1.2rem;
+    }
+
+    .busqueda {
+        display: block;
+        justify-content: center;
+    }
+
+
+
+    .buscarpokemon {
+        width: 110%;
+
+        padding: 1rem;
+        margin-top: 0.1rem;
+        margin-left: -1.5rem;
+        margin-right: -20rem;
+        margin-bottom:1rem ;
+        display: block;
+
+    }
+
+    .img-pokemon-b {
+        display: block;
+        width: 100%;
+
+
+    }
+.info-pokemon-b {
+
+    margin-left: 0.2rem;
+    width: 100%;
+    padding-top: 1rem;
+   
+}
+    .sonido i {
+        margin-left: -1rem;
+        background-color: #609d14;
+    }
+
+    .pokemones {
+        margin-bottom: 1rem;
+    }
+         .peso1,
+         .tipo1,
+         .altura1 {
+          padding-left: 5rem;
+    
+    
+         }
+
+
+    #tipos_buscar {
+        width: 100%;
+
+
+    }
+
+    #busquedapokemon {
+
+        width: 100%;
+        margin-left: -2rem;
+    }
+}
+
+@media (min-width: 1500px) {
+.info-pokemon-b {
+
+        margin-left: 0.2rem;
+        width: 60%;
+        padding-top: 5rem;
+      
+
+    }
+        .peso1,
+        .tipo1,
+        .altura1 {
+           margin: 2rem;
+           padding: 1rem;
+           font-size: 25px;
+          
+        padding-left: 5rem;
+    
+    
+        }
+        .id_inf {
+            font-size: 1.5rem;
+        }
+
+        .nombre {
+            margin-top: 0.5rem;
+            font-size: 2rem;
+        }
+    
+    
+        .sonido i {
+           font-size: 55px; 
+           color: #fff;
+        }
+
+        main {
+            margin-left: 5rem;
+        }
+        
+             
+        .pokemon-varios {
+            padding-left: 8rem;
+
+        }
+ .id {
+ font-size: 2.5rem;
+ }
+  .lista {
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+}
+
+
+@media (min-width: 991.98px) { 
+
+    .logo_imagen {
+        font-size: 33%;
+        margin: -2.5rem 0.1rem  1rem 0.1rem;
+        height: 285%;
+    }
+
+}
+
+
+
+

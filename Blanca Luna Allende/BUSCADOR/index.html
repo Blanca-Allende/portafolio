@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5ce556c387.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>BUSCADOR</title>
+</head>
+
+<body>
+  
+    <div class="principal"> <a href="../index .html#PROYECTOS"><i class="fa-duotone fa-solid fa-house" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i></a></div>
+ 
+ 
+ 
+  <div  class="encabezado">
+    <h2>BUSCADOR DE AUTOS</h2>
+    <img src="auto.png" alt="">
+  </div>
+
+  <div class="container">  
+
+  <div class="formulario">
+
+
+
+    
+    <form id="buscador" action="">
+
+      <label for="marca">Marca</label>
+      <select name="marca" id="marca">
+        <option value="">Seleccione</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Ford">Ford</option>
+        <option value="Mercedes Benz">Mercedes Benz</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Dodge">Dodge</option>
+      </select>
+    
+      <label for="year">Año</label>
+      <select name="year" id="year">
+        <option value="">Seleccione</option>
+        <!-- Puedes agregar opciones de años más tarde -->
+      </select>
+    
+      <label for="maximo">Máximo</label>
+      <select name="maximo" id="maximo">
+        <option value="">Seleccione</option>
+        <option value="20000">20,000</option>
+        <option value="30000">30,000</option>
+        <option value="40000">40,000</option>
+        <option value="50000">50,000</option>
+        <option value="60000">60,000</option>
+        <option value="70000">70,000</option>
+        <option value="80000">80,000</option>
+        <option value="90000">90,000</option>
+      </select>
+    
+      <label for="minimo">Mínimo</label>
+      <select name="minimo" id="minimo">
+        <option value="">Seleccione</option>
+        <option value="20000">20,000</option>
+        <option value="30000">30,000</option>
+        <option value="40000">40,000</option>
+        <option value="50000">50,000</option>
+        <option value="60000">60,000</option>
+        <option value="70000">70,000</option>
+        <option value="80000">80,000</option>
+        <option value="90000">90,000</option>
+      </select>
+    
+      <label for="puertas">Puertas</label>
+      <select name="puertas" id="puertas">
+        <option value="">Seleccione</option>
+        <option value="2">2</option>
+        <option value="4">4</option>
+      </select>
+    
+      <label for="transmision">Transmisión</label>
+      <select name="transmision" id="transmision">
+        <option value="">Seleccione</option>
+        <option value="automatico">Automática</option>
+        <option value="manual">Manual</option>
+      </select>
+    
+      <label for="color">Color</label>
+      <select name="color" id="color">
+        <option value="">Seleccione</option>
+        <option value="Negro">Negro</option>
+        <option value="Azul">Azul</option>
+        <option value="Blanco">Blanco</option>
+        <option value="Rojo">Rojo</option>
+      </select>
+    
+    </form>
+    
+  </div>
+ <div class="resultado">
+  <h2 >Resultados</h2>
+  <div id="resultado"></div>
+  
+  </div>
+
+ 
+ 
+  
+
+ 
+ 
+ </div>
+  
+</div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

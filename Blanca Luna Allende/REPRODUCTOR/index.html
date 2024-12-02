@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor  de musica </title>
+  <script src="https://kit.fontawesome.com/5ce556c387.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  
+
+
+</head>
+
+<body>
+ 
+  <div class="reproductor">
+
+    
+    <div class="principal"> <a href="../index .html#PROYECTOS"><i class="fa-duotone fa-solid fa-house" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i></a></div>
+
+    <img src="./img/Clo7-2.jpg" alt="" id="album-cover">
+    <div id="audio-player-container">
+     <marquee > <p id="song-name"></p></marquee>
+      <p id="song-author"></p>
+
+      <div class="centrar">
+        <button id="btn-prev"><i class="fas fa-backward"></i></button>
+        <button id="btn-play"><i id="btn-play-icon" class="fa-solid fa-circle-play"></i></button>
+        <button id="btn-next"><i class="fas fa-forward"></i></button>
+        <button id="btn-repeat"><i class="fas fa-redo"></i></button>
+
+      </div>
+
+      <div class="centrar">
+        <audio id="audio-player"></audio>
+      </div>
+
+      <div class="centrar">
+        <input id="player-progress" type="range" min="0" value="0">
+        <span id="player-current-time">00:00</span> / <span id="player-duration">00:00</span>
+      </div>
+
+      <div class="centrar">
+        <input id="player-volume" type="range" min="0" max="1" step="0.01" value="1">
+        <button id="btn-volume"><i class="fa-solid fa-volume-high" id="btn-volume-icon"></i></button>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
