@@ -2,6 +2,7 @@ html {
 
   font-family: 'Roboto', sans-serif;
   font-size: 1vw; 
+
 }
 
 
@@ -25,8 +26,10 @@ html {
 body {
   background-color: gray;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
   
 }
+
 section {
   padding: 60px 20px;
   margin-top: 5rem;
@@ -44,8 +47,8 @@ h2 {
 
 footer {
   background-color: var(--colorfooter);
-
-  padding: 1rem 0;
+margin-left: -3rem;
+  padding: 1rem 0 0 -10rem;
   text-align: center;
   height: 8rem;
  margin-top: 0;
@@ -55,10 +58,12 @@ footer {
 .cabecera {
   background-color: var(--colorheader);
   padding: 3rem 0;
+  margin-left: -2rem;
+  margin-right: -2re,;
   height: 8rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 103%;
   z-index: 1000;
 }
 
@@ -106,6 +111,7 @@ footer {
   justify-content: center;
   margin-bottom: 2rem;
   gap: 5rem;
+
   
 }
 
@@ -142,15 +148,24 @@ footer {
 
   display: flex;
   margin-top: 15rem;
+
 }
 
-.presentacion .foto,
+
 .presentacion .texto {
   margin-top: -15rem;
   padding-top: 1rem;
   width: 50%;
   margin-bottom: 2rem;
   
+}
+.presentacion .foto{
+  margin: -15rem 2rem 2rem 4rem;
+  padding-top: 1rem;
+ 
+  width: 30%;
+  margin-bottom: 2rem;
+
 }
 
 .presentacion .foto {
@@ -199,7 +214,7 @@ footer {
   text-align: center;
   margin-top: -10px;
  
-  font-size: 70%;
+  font-size: 50%;
 }
 
 .card__body {
@@ -241,15 +256,15 @@ footer {
   color: var(--blanco);
 }
 .button_slide {
-  margin-top: 1REM;
+  margin-top: 1rem;
   color: var(--colorheader);
   border: 3px solid #135d66;
   background-color: #135d66;
   border-radius: 0px;
-  padding: 18px 36px;
+  padding: 3px 3px;
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 17px;
+  font-size: 50px;
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0  #092635;
@@ -470,15 +485,20 @@ footer {
 }
 
 @media (min-width: 960px) {
+
+  
   #menu {
     display: none;
    
   }
 
 
+
 }
 
 @media (max-width: 959px) {
+
+ 
   .nav_menu {
 
     display: none !important;
@@ -487,7 +507,7 @@ footer {
 
 
   .cabecera {
-    height: 1rem;
+    height: 12rem;
    
 
   }
@@ -498,47 +518,122 @@ footer {
   }
 
   .titulos {
+   padding-top: 0.5rem;
     font-size: 2.5rem;
+  }
+
+  section {
+    padding: 25px 20px;
+    margin-top: 5rem;
+  
   }
 
 
   .presentacion {
     display: block;
-    width: 80%;
-    margin: 18rem 5rem 2rem 8rem;
+    width: 100%;
+    margin: 18rem 7rem 2rem 3rem;
 
 
   }
 
 
   .presentacion .foto {
-    width: 80%;
+    width: 40%;
+    margin-left: 17rem;
     align-items: center;
+    border-radius: 50%;
 
   }
 
   .presentacion .texto {
 
-    width: 80%;
+    width: 100%;
     margin-top: -1rem;
+  font-size: 8px;
+  margin-left:-1rem ;
+  padding-left: -4rem;
 
 
 
   }
 
-  .card {
-
-    width: 70%;
-
-
+  .card.card {
+    width: 100%;
+    height: 300%;
+    margin-top: 6rem;
   }
+  
+  .card__title {
+    text-align: center;
+    margin-top: -10px;
+   
+    font-size: 50%;
+  }
+  
+  .card__body {
+    margin-top: 6rem;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__img {
+  
+    width: 100%;
+    
+    height: 60rem;
+   
+  }
+
+  .button_slide {
+  padding: 1px 10px;
+  font-size: 2.5px;
+  letter-spacing: 1px;
+ 
+}
+.titulos {
+  font-size: 5rem;
+
+}
+
+h2 {
+  margin-top: 6rem;
+    font-size: 3rem;
+   
+}
+footer {
+ 
+  height: 11rem;
+ margin-bottom: -2rem;
+}
+
+.footer-link {
+  font-size: 7rem;
+ 
+}
 
   .img_tecnologia,
   .img_certificado {
-    width: 40%;
- 
-    height: 15rem;
-
+    width: 100%;
+    height: 45rem;
+    margin:2rem 1rem;
+    padding-top: 6rem;
     
   }
+
+  .hamburger {
+    display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+    padding-top: -10rem;
+    margin-top: -15rem;
+  }
+
+
+
+
+
+
 }
